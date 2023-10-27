@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  each message in messages
+    p #{message.user + ": " + message.text}
+    p #{message.date}
+  a(href="/new") Add a message.
+
